@@ -39,8 +39,8 @@ def plot_prediction(kline_df, pred_df):
 
 
 # 1. Load Model and Tokenizer
-tokenizer = KronosTokenizer.from_pretrained("/Users/xubo/AI/Kronos/huggingface_model/Kronos-Tokenizer-base")
-model = Kronos.from_pretrained("/Users/xubo/AI/Kronos/huggingface_model/Kronos-small")
+tokenizer = KronosTokenizer.from_pretrained("/Users/xubo/AI/huggingface_model/Kronos/Kronos-Tokenizer-base")
+model = Kronos.from_pretrained("/Users/xubo/AI/huggingface_model/Kronos/Kronos-base")
 
 # 2. Instantiate Predictor
 predictor = KronosPredictor(model, tokenizer, device="cpu", max_context=512)
